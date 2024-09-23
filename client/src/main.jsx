@@ -15,6 +15,14 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
+    path: "/signup/1",
+    element: <RegistrationForm />
+  },
+  {
+    path: "/view/1",
+    element: <Participants />
+  },
+  {
     path: "/signup/:id",
     element: <RegistrationForm />
   },
