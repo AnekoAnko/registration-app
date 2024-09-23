@@ -11,14 +11,14 @@ function App() {
   const [sortBy, setSortBy] = useState('id'); 
 
   const getData = async () => {
-    const response = await axios.get(`http://localhost:3000`, { 
+    const response = await axios.get(`https://registration-app-eygm.onrender.com/`, { 
       params: { page: page, sortBy: sortBy } 
     });
     return response.data;
   };
 
   const getTotalCount = async () => {
-    const response = await axios.get('http://localhost:3000/total-events');
+    const response = await axios.get('https://registration-app-eygm.onrender.com/total-events');
     return response.data.totalCount;
   };
 
