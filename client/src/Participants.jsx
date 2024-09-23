@@ -12,14 +12,14 @@ function Participants() {
     const { id } = useParams();
 
     const getData = async (search = '') => {
-        const response = await axios.get(`http://localhost:3000/views/${id}`, {
+        const response = await axios.get(`https://registration-app-eygm.onrender.com/views/${id}`, {
             params: { page: page, search: search }
         });
         return response.data;
     };
 
     const getTotalCount = async (search = '') => {
-        const response = await axios.get(`http://localhost:3000/total-participants/${id}`, {
+        const response = await axios.get(`https://registration-app-eygm.onrender.com/total-participants/${id}`, {
             params: { search: search }
         }); 
         return response.data.totalCount;
