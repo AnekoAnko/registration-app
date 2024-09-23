@@ -75,7 +75,7 @@ function RegistrationForm() {
         if (!validate()) return;
 
         try {
-            await axios.post(`http://localhost:3000/register/${id}`, data);
+            await axios.post(`https://registration-app-eygm.onrender.com/register/${id}`, data);
             navigate('/');
         } catch (error) {
             console.error("Error sending data", error);
