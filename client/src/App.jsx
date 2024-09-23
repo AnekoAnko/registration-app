@@ -74,7 +74,7 @@ function App() {
             <Card key={event.id} event={event} />
           ))
         ) : (
-          <p>No events available</p>
+          <p>Connecting to database</p>
         )}
       </div>
       <div className="pagination">
