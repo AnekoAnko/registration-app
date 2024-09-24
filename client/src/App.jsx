@@ -74,8 +74,10 @@ function App() {
             <Card key={event.id} event={event} />
           ))
         ) : (
-          <p>Connecting to database...</p>
-          <p>This may take about one minute</p>
+          <div>
+            <p>Connecting to database...</p>
+            <p>This may take about one minute</p>
+          </div>
         )}
       </div>
       <div className="pagination">
