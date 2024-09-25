@@ -63,7 +63,8 @@ function Participants() {
     return (
         <div>
             <h3 className='participants-title'>Awesome Participants</h3>
-            <input 
+            <input
+                className='input-search'
                 type="text" 
                 placeholder="Search by name or email" 
                 value={searchTerm} 
