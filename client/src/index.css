@@ -119,11 +119,10 @@ button {
     padding: 0 20px;
 }
 
-.search-options {
-    padding: 5px 40px;
+.sort-options {
+    padding: 0 0 5px 40px;
 }
 
 .input-search {
-    padding: 5px 40px;
+    margin: 0 0 5px 40px;
 }
-
